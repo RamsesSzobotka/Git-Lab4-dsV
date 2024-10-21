@@ -1,0 +1,1270 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to bottom right, rgb(103, 185, 253), rgb(92, 27, 27));
+}
+
+
+
+header{
+    text-align: center;
+}
+
+section {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    height: 100%;         
+}
+
+h1{
+    color: rgb(0, 0, 0);
+}
+
+p{
+    color: rgb(221, 24, 24);
+    
+}
+
+
+div{
+    text-align: center;
+    border: solid 1px black;
+    margin: 1px;  
+    max-width: 100%;
+    max-height: 100%
+}
+
+div:hover{
+    background-color: #031FA2;
+    p{
+        color: white;
+    }
+}
+
+footer {
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: start;
+    padding: 20px;
+}
+
+footer p {
+    color: white;
+    margin: 5px 0;
+}
+/* se declara las secciones del grid o el tamaño en base a  las columnas y filas necesarias*/
+.ContenedorTablaP{
+    display: grid;
+    grid-template-rows: repeat(7, 50px);
+    grid-template-columns: repeat(18,50px);
+    box-sizing: border-box; 
+}
+/*color para la seccion 1*/
+.PrimeraColumna{
+    background-color: #F7CAAC;
+}
+/*color para la seccion 2*/
+.Alacalinoterros{
+    background-color: #FFE599;
+
+}
+/*color para la seccion 3*/
+.metalesDeTransicion{
+    background-color: #FFFF00;
+}
+
+/*color para la seccion 4*/
+.OtrosMetales{
+    background-color: #8EAADB;
+}
+/*color para la seccion 5*/
+.Metaloides{
+    background-color: #68FB61;
+}
+/*color para la seccion 6*/
+.NoMetales{
+    background-color: #DDABFF;
+}
+/*color para la seccion 7*/
+.Hatalogenos{
+    background-color: #FF66FF;
+}
+/*color para la seccion 8*/
+.GasesNobles{
+    background-color: #00CCFF;
+}
+
+/* grid area: inicio-Fila/ inicio-Columna/ fin-Fila/ fin-Columna  */
+
+#Separador{
+    grid-area: 4 / 13 / 4 / 13;
+    padding: 20px 35px;
+}
+/*declaramos las posiciones de los elementos en el grid*/
+/*columna 1*/
+#H{
+    grid-area: 1/1/1/1;
+}
+
+#Li{
+    grid-area: 2/1/2/1;
+}
+
+#Na{
+    grid-area: 3/1/3/1;
+}
+
+#K{
+    grid-area: 4/1/4/1;
+}
+
+#Rb{
+    grid-area: 5/1/5/1;
+}
+
+#Cs{
+    grid-area: 6/1/6/1;
+}
+
+#Fr{
+    grid-area: 7/1/7/1;
+}
+
+
+/*columna 2*/
+
+#Be{
+    grid-area: 2/2/2/2;
+}
+
+#Mg{
+    grid-area: 3/2/3/2;
+}
+
+#Ca{
+    grid-area: 4/2/4/2;
+}
+
+#Sr{
+    grid-area: 5/2/5/2;
+}
+
+#Ba{
+    grid-area: 6/2/6/2;
+}
+
+#Ra{
+    grid-area: 7/2/7/2;
+}
+
+/*columna 3*/
+
+#Sc{
+    grid-area: 4/3/4/3;
+}
+
+#Y{
+    grid-area: 5/3/5/3;
+}
+
+#Lu{
+    grid-area: 6/3/6/3;
+}
+
+#Lr{
+    grid-area: 7/3/7/3;
+}
+
+/*columna 4*/
+
+#Ti{
+    grid-area: 4/4/4/4;
+}
+
+#Zr{
+    grid-area: 5/4/5/4;
+}
+
+#Hf{
+    grid-area: 6/4/6/4;
+}
+
+#Rf{
+    grid-area: 7/4/7/4;
+}
+
+/*columna 5*/
+
+#V{
+    grid-area: 4/5/4/5;
+}
+
+#Nb{
+    grid-area: 5/5/5/5;
+}
+
+#Ta{
+    grid-area: 6/5/6/5;
+}
+
+#Db{
+    grid-area: 7/5/7/5;
+}
+
+
+/*columna 6*/
+
+
+#Cr{
+    grid-area: 4/6/4/6;
+}
+
+#Mo{
+    grid-area: 5/6/5/6;
+}
+
+#W{
+    grid-area: 6/6/6/6;
+}
+
+
+/*columna 7*/
+
+#Sg{
+    grid-area: 7/6/7/6;
+}
+
+#Mn{
+    grid-area: 4/7/4/7;
+}
+
+#Tc{
+    grid-area: 5/7/5/7;
+}
+
+#Re{
+    grid-area: 6/7/6/7;
+}
+
+#Bh{
+    grid-area: 7/7/7/7;
+}
+
+
+/*columna 8*/
+#Fe{
+    grid-area: 4/8/4/8;
+}
+
+#Ru{
+    grid-area: 5/8/5/8;
+}
+
+#Os{
+    grid-area: 6/8/6/8;
+}
+
+#Hs{
+    grid-area: 7/8/7/8;
+}
+
+
+/*columna 9*/
+#Co{
+    grid-area: 4/9/4/9;
+}
+
+#Rh{
+    grid-area: 5/9/5/9;
+}
+
+#Ir{
+    grid-area: 6/9/6/9;
+}
+
+#Mt{
+    grid-area: 7/9/7/9;
+}
+
+
+/*columna 10*/
+#Ni{
+    grid-area: 4/10/4/10;
+}
+
+#Pd{
+    grid-area: 5/10/5/10;
+}
+
+#Pt{
+    grid-area: 6/10/6/10;
+}
+
+#Ds{
+    grid-area: 7/10/7/10;
+}
+
+
+/*columna 11*/
+#Cu{
+    grid-area: 4/11/4/11;
+}
+
+#Ag{
+    grid-area: 5/11/5/11;
+}
+
+#Au{
+    grid-area: 6/11/6/11;
+}
+
+#Rg{
+    grid-area: 7/11/7/11;
+}
+
+
+/*columna 12*/
+#Zn{
+    grid-area: 4/12/4/12;
+}
+
+#Cd{
+    grid-area: 5/12/5/12;
+}
+
+#Hg{
+    grid-area: 6/12/6/12;
+}
+
+#Cn{
+    grid-area: 7/12/7/12;
+}
+
+
+/*columna 13*/
+#B{
+    grid-area: 2/13/2/13;
+}
+
+#Al{
+    grid-area: 3/13/3/13;
+}
+
+#Ga{
+    grid-area: 4/13/4/13;
+}
+
+#In{
+    grid-area: 5/13/5/13;
+}
+
+#Tl{
+    grid-area: 6/13/6/13;
+}
+
+#Nh{
+    grid-area: 7/13/7/13;
+}
+
+
+/*columna 14*/
+#C{
+    grid-area: 2/14/2/14;
+}
+
+#Si{
+    grid-area: 3/14/3/14;
+}
+
+#Ge{
+    grid-area: 4/14/4/14; 
+}
+
+#Sn{
+    grid-area: 5/14/5/14;
+}
+
+#Pb{
+    grid-area: 6/14/6/14;
+}
+
+#Fl{
+    grid-area: 7/14/7/14;
+}
+
+
+/*columna 15*/
+#N{
+    grid-area: 2/15/2/15;
+}
+
+#P{
+    grid-area: 3/15/3/15;
+}
+
+#As{
+    grid-area: 4/15/4/15;
+}
+
+#Sb{
+    grid-area: 5/15/5/15;
+}
+
+#Bi{
+    grid-area: 6/15/6/15;
+}
+
+#Mc{
+    grid-area: 7/15/7/15;
+}
+
+
+/*columna 16*/
+#O{
+    grid-area: 2/16/2/16;
+}
+
+#S{
+    grid-area: 3/16/3/16;
+}
+
+#Se{
+    grid-area: 4/16/4/16;
+}
+
+#Te{
+    grid-area: 5/16/5/16;
+}
+
+#Po{
+    grid-area: 6/16/6/16;
+}
+
+#Lv{
+    grid-area: 7/16/7/16;
+}
+
+
+/*columna 17*/
+#F{
+    grid-area: 2/17/2/17;
+}
+
+#Cl{
+    grid-area: 3/17/3/17;
+}
+
+#Br{
+    grid-area: 4/17/4/17;
+}
+
+#I{
+    grid-area: 5/17/5/17;
+}
+
+#At{
+    grid-area: 6/17/6/17;
+}
+
+#Ts{
+    grid-area: 7/17/7/17;
+}
+
+
+
+/*columna 18*/
+#He{
+    grid-area: 1/18/1/18;
+}
+
+#Ne{
+    grid-area: 2/18/2/18;
+}
+
+#Ar{
+    grid-area: 3/18/3/18;
+}
+
+#Kr{
+    grid-area: 4/18/4/18;
+}
+
+#Xe{
+    grid-area: 5/18/5/18;
+}
+
+#Rn{
+    grid-area: 6/18/6/18;
+}
+
+#Og{
+    grid-area: 7/18/7/18;
+}
+
+@media (max-width: 600px){
+    
+    .ContenedorTablaP {
+        display: grid;
+        grid-template-columns: repeat(2, 50px);
+        grid-template-rows: repeat(54, 50px);
+        box-sizing: border-box;
+    }
+    
+    #H{
+        grid-area: 1/1/1/1;
+    }
+    
+    #Li{
+        grid-area: 1/2/1/2;
+    }
+    
+    #Na{
+        grid-area: 2/1/2/1;
+    }
+    
+    #K{
+        grid-area: 2/2/2/2;
+    }
+    
+    #Rb{
+        grid-area: 3/1/3/1;
+    }
+    
+    #Cs{
+        grid-area: 3/2/3/2;
+    }
+    
+    #Fr{
+        grid-area: 4/1/4/1;
+    }
+       
+    /*Alacalinoterros*/
+    
+    #Be{
+        grid-area: 6/1/6/1;
+    }
+    
+    #Mg{
+        grid-area: 6/2/6/2;
+    }
+    
+    #Ca{
+        grid-area: 7/1/7/1;
+    }
+    
+    #Sr{
+        grid-area: 7/2/7/2;
+    }
+    
+    #Ba{
+        grid-area: 8/1/8/1;
+    }
+    
+    #Ra{
+        grid-area: 8/2/8/2;
+    }
+    
+    /*metalesDeTransicion*/
+    
+    #Sc{
+        grid-area: 10/1/10/1;
+    }
+    
+    #Y{
+        grid-area: 10/2/10/2;
+    }
+    
+    #Lu{
+        grid-area: 11/1/11/1;
+    }
+    
+    #Lr{
+        grid-area: 11/2/11/2;
+    }
+ 
+    #Ti{
+        grid-area: 12/1/12/1;
+    }
+    
+    #Zr{
+        grid-area: 12/2/12/2;
+    }
+    
+    #Hf{
+        grid-area: 13/1/13/1;
+    }
+    
+    #Rf{
+        grid-area: 13/2/13/2;
+    }
+
+    #V{
+        grid-area: 14/1/14/1;
+    }
+    
+    #Nb{
+        grid-area: 14/2/14/2;
+    }
+    
+    #Ta{
+        grid-area: 15/1/15/1;
+    }
+    
+    #Db{
+        grid-area: 15/2/15/2;
+    }
+     
+    #Cr{
+        grid-area: 16/1/16/1;
+    }
+    
+    #Mo{
+        grid-area: 16/2/16/2;
+    }
+    
+    #W{
+        grid-area: 17/1/17/1;
+    }
+    
+    #Sg{
+        grid-area: 17/2/17/2;
+    }
+    
+    #Mn{
+        grid-area: 18/1/18/1;
+    }
+    
+    #Tc{
+        grid-area: 18/2/18/2;
+    }
+    
+    #Re{
+        grid-area: 19/1/19/1;
+    }
+    
+    #Bh{
+        grid-area: 19/2/19/2;
+    }
+    
+    #Fe{
+        grid-area: 20/1/20/1;
+    }
+    
+    #Ru{
+        grid-area: 20/2/20/2;
+    }
+    
+    #Os{
+        grid-area: 21/1/21/1;
+    }
+    
+    #Hs{
+        grid-area: 21/2/21/2;
+    }
+    
+    #Co{
+        grid-area: 22/1/22/1;
+    }
+    
+    #Rh{
+        grid-area: 22/2/22/2;
+    }
+    
+    #Ir{
+        grid-area: 23/1/23/1;
+    }
+    
+    #Mt{
+        grid-area: 23/2/23/2;
+    }
+
+    #Ni{
+        grid-area: 24/1/24/1;
+    }
+    
+    #Pd{
+        grid-area: 24/2/24/2;
+    }
+    
+    #Pt{
+        grid-area: 25/1/25/1;
+    }
+    
+    #Ds{
+        grid-area: 25/2/25/2;
+    }
+    
+    #Cu{
+        grid-area: 26/1/26/1;
+    }
+    
+    #Ag{
+        grid-area: 26/2/26/2;
+    }
+    
+    #Au{
+        grid-area: 27/1/27/1;
+    }
+    
+    #Rg{
+        grid-area: 27/2/27/2;
+    }
+    
+    #Zn{
+        grid-area: 28/1/28/1;
+    }
+    
+    #Cd{
+        grid-area: 28/2/28/2;
+    }
+    
+    #Hg{
+        grid-area: 29/1/29/1;
+    }
+    
+    #Cn{
+        grid-area: 29/2/29/2;
+    }
+    
+    /*Metaloides*/
+    #B{
+        grid-area: 31/1/31/1;
+    }
+    
+    #Si{
+        grid-area: 31/2/31/2;
+    }
+
+    #Ge{
+        grid-area: 32/1/32/1; 
+    }
+
+    #As{
+        grid-area: 32/2/32/2;
+    }
+
+    #Sb{
+        grid-area: 33/1/33/1;
+    }
+
+    #Te{
+        grid-area: 33/2/33/2;
+    }
+    
+    #Po{
+        grid-area: 34/1/34/1;
+    }
+
+    /*OtrosMetales*/
+   
+    #Al{
+        grid-area: 36/1/36/1;
+    }
+    
+    #Ga{
+        grid-area: 36/2/36/2;
+    }
+    
+    #In{
+        grid-area: 37/1/37/1;
+    }
+    
+    #Tl{
+        grid-area: 37/2/37/2;
+    }
+    
+    #Nh{
+        grid-area: 38/1/38/1;
+    }
+ 
+    #Sn{
+        grid-area: 38/2/38/2;
+    }
+    
+    #Pb{
+        grid-area: 39/1/39/1;
+    }
+    
+    #Fl{
+        grid-area: 39/2/39/2;
+    }
+ 
+    #Bi{
+        grid-area: 40/1/40/1;
+    }
+    
+    #Mc{
+        grid-area: 40/2/40/2;
+    }
+    
+    #Lv{
+        grid-area: 41/1/41/1;
+    }
+    
+    /*NoMetales*/
+    #C{
+        grid-area: 43/1/43/1;
+    }
+
+    #N{
+        grid-area: 43/2/43/2;
+    }
+    
+    #O{
+        grid-area: 44/1/44/1;
+    }
+    
+    #P{
+        grid-area: 44/2/44/2;
+    }
+
+    #S{
+        grid-area: 45/1/45/1;
+    }
+    
+    #Se{
+        grid-area: 45/2/45/2;
+    }
+    /*Hatalogenos*/
+    #F{
+        grid-area: 47/1/47/1;
+    }
+    
+    #Cl{
+        grid-area: 47/2/47/2;
+    }
+    
+    #Br{
+        grid-area: 48/1/48/1;
+    }
+    
+    #I{
+        grid-area: 48/2/48/2;
+    }
+    
+    #At{
+        grid-area: 49/1/49/1;
+    }
+    
+    #Ts{
+        grid-area: 49/2/49/2;
+    }
+     
+    /*GasesNobles*/
+    #He{
+        grid-area: 51/1/51/1;
+    }
+    
+    #Ne{
+        grid-area: 51/2/51/2;
+    }
+    
+    #Ar{
+        grid-area: 52/1/52/1;
+    }
+    
+    #Kr{
+        grid-area: 52/2/52/2;
+    }
+    
+    #Xe{
+        grid-area: 53/1/53/1;
+    }
+    
+    #Rn{
+        grid-area: 53/2/53/2;
+    }
+    
+    #Og{
+        grid-area: 54/1/54/1;
+    }
+}
+
+@media (min-width: 601px) and (max-width:800px){
+    
+    .ContenedorTablaP {
+        display: grid;
+        grid-template-columns: repeat(13, 40px);
+        grid-template-rows: repeat(10, 40px);
+        box-sizing: border-box;
+    }
+
+    div:hover{
+        background-color: #C11905;
+        p{
+            color: white;
+        }
+    }
+    
+    /*seccion 1 y 2*/
+    #H{
+        grid-area: 1/1/1/1;
+    }
+    
+    #Li{
+        grid-area: 1/2/1/2;
+    }
+    
+    #Na{
+        grid-area: 1/3/1/3;
+    }
+    
+    #K{
+        grid-area: 1/4/1/4;
+    }
+    
+    #Rb{
+        grid-area: 1/5/1/5;
+    }
+    
+    #Cs{
+        grid-area:  1/6/1/6;
+    }
+    
+    #Fr{
+        grid-area:  1/7/1/7;
+    }
+    /*Alacalinoterros*/
+    
+    #Be{
+        grid-area: 1/8/1/8;
+    }
+    
+    #Mg{
+        grid-area:  1/9/1/9;
+    }
+    
+    #Ca{
+        grid-area:  1/10/1/10;
+    }
+    
+    #Sr{
+        grid-area:  1/11/1/11;
+    }
+    
+    #Ba{
+        grid-area:  1/12/1/12;
+    }
+    
+    #Ra{
+        grid-area:  1/13/1/13;
+    }
+    /*seccion 3*/
+    /*metalesDeTransicion*/
+    
+    #Sc{
+        grid-area: 2/1/2/1;
+    }
+    
+    #Y{
+        grid-area: 2/2/2/2;
+    }
+    
+    #Lu{
+        grid-area: 2/3/2/3;
+    }
+    
+    #Lr{
+        grid-area: 2/4/2/4;
+    }
+ 
+    #Ti{
+        grid-area: 2/5/2/5;
+    }
+    
+    #Zr{
+        grid-area: 3/1/3/1;
+    }
+    
+    #Hf{
+        grid-area: 3/2/3/2;
+    }
+    
+    #Rf{
+        grid-area: 3/3/3/3;
+    }
+
+    #V{
+        grid-area: 3/4/3/4;
+    }
+    
+    #Nb{
+        grid-area: 3/5/3/5;
+    }
+    
+    #Ta{
+        grid-area: 4/1/4/1;
+    }
+    
+    #Db{
+        grid-area: 4/2/4/2;
+    }
+     
+    #Cr{
+        grid-area: 4/3/4/3;
+    }
+    
+    #Mo{
+        grid-area: 4/4/4/4;
+    }
+    
+    #W{
+        grid-area: 4/5/4/5;
+    }
+    
+    #Sg{
+        grid-area: 5/1/5/1;
+    }
+    
+    #Mn{
+        grid-area: 5/2/5/2;
+    }
+    
+    #Tc{
+        grid-area: 5/3/5/3;
+    }
+    
+    #Re{
+        grid-area: 5/4/5/4;
+    }
+    
+    #Bh{
+        grid-area: 5/5/5/5;
+    }
+    
+    #Fe{
+        grid-area: 6/1/6/1;
+    }
+    
+    #Ru{
+        grid-area: 6/2/6/2;
+    }
+    
+    #Os{
+        grid-area: 6/2/6/2;
+    }
+    
+    #Hs{
+        grid-area: 6/3/6/3;
+    }
+    
+    #Co{
+        grid-area: 6/4/6/4;
+    }
+    
+    #Rh{
+        grid-area: 6/5/6/5;
+    }
+    
+    #Ir{
+        grid-area: 7/1/7/1;
+    }
+    
+    #Mt{
+        grid-area: 7/2/7/2;
+    }
+
+    #Ni{
+        grid-area: 7/3/7/3;
+    }
+    
+    #Pd{
+        grid-area: 7/4/7/4;
+    }
+    
+    #Pt{
+        grid-area: 7/5/7/5;
+    }
+    
+    #Ds{
+        grid-area: 8/1/8/1;
+    }
+    
+    #Cu{
+        grid-area: 8/2/8/2;
+    }
+    
+    #Ag{
+        grid-area: 8/3/8/3;
+    }
+    
+    #Au{
+        grid-area: 8/4/8/4;
+    }
+    
+    #Rg{
+        grid-area: 8/5/8/5;
+    }
+    
+    #Zn{
+        grid-area: 9/1/9/1;
+    }
+    
+    #Cd{
+        grid-area: 9/2/9/2;
+    }
+    
+    #Hg{
+        grid-area: 9/3/9/3;
+    }
+    
+    #Cn{
+        grid-area: 9/4/9/4;
+    }
+    /*seccion 4,5 y 6*/
+    #B{
+        grid-area: 2/6/2/6;
+    }
+
+    #Al{
+        grid-area: 3/6/3/6;
+    }
+
+    #Ga{
+        grid-area: 4/6/4/6;
+    }
+
+    #In{
+        grid-area: 5/6/5/6;
+    }
+
+    #Tl{
+        grid-area: 6/6/6/6;
+    }
+
+    #Nh{
+        grid-area: 7/6/7/6;
+    }
+
+
+    /*columna 7*/
+    #C{
+        grid-area: 2/7/2/7;
+    }
+
+    #Si{
+        grid-area: 3/7/3/7;
+    }
+
+    #Ge{
+        grid-area: 4/7/4/7;
+    }
+
+    #Sn{
+        grid-area: 5/7/5/7;
+    }
+
+    #Pb{
+        grid-area: 6/7/6/7;
+    }
+
+    #Fl{
+        grid-area: 7/7/7/7;
+    }
+
+
+    /*columna 8*/
+    #N{
+        grid-area: 2/8/2/8;
+    }
+
+    #P{
+        grid-area: 3/8/3/8;
+    }
+
+    #As{
+        grid-area: 4/8/4/8;
+    }
+
+    #Sb{
+        grid-area: 5/8/5/8;
+    }
+
+    #Bi{
+        grid-area: 6/8/6/8;
+    }
+
+    #Mc{
+        grid-area: 7/8/7/8;
+    }
+
+
+    /*columna 9*/
+    #O{
+        grid-area: 2/9/2/9;
+    }
+
+    #S{
+        grid-area: 3/9/3/9;
+    }
+
+    #Se{
+        grid-area: 4/9/4/9;
+    }
+
+    #Te{
+        grid-area: 5/9/5/9;
+    }
+
+    #Po{
+        grid-area: 6/9/6/9;
+    }
+
+    #Lv{
+        grid-area: 7/9/7/9;
+    }
+
+
+    /*GasesNobles*/
+    #F{
+        grid-area: 10/1/10/1;
+    }
+
+    #Cl{
+        grid-area: 10/2/10/2;
+    }
+
+    #Br{
+        grid-area: 10/3/10/3;
+    }
+
+    #I{
+        grid-area: 10/4/10/4;
+    }
+
+    #At{
+        grid-area: 10/5/10/5;
+    }
+
+    #Ts{
+        grid-area: 10/6/10/6;
+    }
+    
+    #He{
+        grid-area: 10/7/10/7;
+    }
+    
+    #Ne{
+        grid-area: 10/8/10/8;
+    }
+    
+    #Ar{
+        grid-area: 10/9/10/9;
+    }
+    
+    #Kr{
+        grid-area: 10/10/10/10;
+    }
+    
+    #Xe{
+        grid-area: 10/11/10/11;
+    }
+    
+    #Rn{
+        grid-area: 10/12/10/12;
+    }
+    
+    #Og{
+        grid-area: 10/13/10/13;
+    }
+}
